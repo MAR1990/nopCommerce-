@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+
+	<listener class-name="com.nopCommerceV1.utilities.Reporting"></listener>
+
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+     <class name="com.nopCommerceV1.testCases.TC_LoginTest_001"/> 
+     <!-- <class name="com.nopCommerceV1.testCases.TC_LoginDDT_002"/> --> 
+    </classes>
+  </test> <!-- Test -->
+  
+  <!-- <test thread-count="5" name="Test1">
+  <parameter name="browser" value="IE"></parameter>
+    <classes>
+      <class name="com.nopCommerceV1.testCases.TC_LoginTest_001"/>
+      <class name="com.nopCommerceV1.testCases.TC_LoginDDT_002"/>
+    </classes>
+  </test>  --> <!-- Test -->
+  
+   <!--  <test thread-count="5" name="Test2">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="com.nopCommerceV1.testCases.TC_LoginTest_001"/>
+      <class name="com.nopCommerceV1.testCases.TC_LoginDDT_002"/>
+    </classes>
+  </test>  --> <!-- Test -->
+</suite> <!-- Suite -->
